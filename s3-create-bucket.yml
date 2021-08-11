@@ -2,7 +2,7 @@
 - hosts: localhost
   tasks:
   - name: Create an S3 bucket
-    amazon.aws.s3_bucket:
+    aws_s3:
       name: S3BucketName
       region: us-east-1
       state: present
